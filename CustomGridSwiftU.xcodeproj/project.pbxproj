@@ -11,6 +11,7 @@
 		8EA969EA27A0140800516202 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA969E927A0140800516202 /* ContentView.swift */; };
 		8EA969EC27A0140900516202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA969EB27A0140900516202 /* Assets.xcassets */; };
 		8EA969EF27A0140900516202 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA969EE27A0140900516202 /* Preview Assets.xcassets */; };
+		8EA969F627A0141B00516202 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA969F527A0141B00516202 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8EA969E927A0140800516202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8EA969EB27A0140900516202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EA969EE27A0140900516202 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8EA969F527A0141B00516202 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8EA969E727A0140800516202 /* CustomGridSwiftUApp.swift */,
 				8EA969E927A0140800516202 /* ContentView.swift */,
+				8EA969F527A0141B00516202 /* Person.swift */,
 				8EA969EB27A0140900516202 /* Assets.xcassets */,
 				8EA969ED27A0140900516202 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA969F627A0141B00516202 /* Person.swift in Sources */,
 				8EA969EA27A0140800516202 /* ContentView.swift in Sources */,
 				8EA969E827A0140800516202 /* CustomGridSwiftUApp.swift in Sources */,
 			);
