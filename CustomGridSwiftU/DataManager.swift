@@ -14,5 +14,7 @@ class DataManager {
     
     let photo = ["gamecontroller", "circle.square", "circle.grid.cross.left.filled", "pencil", "folder.circle.fill", "folder.fill", "sun.min"]
     
+    let avatar = ["ant.circle.fill", "ant.circle.fill", "ant.circle.fill", "ant.circle.fill", "ant.circle.fill", "ant.circle.fill", "ant.circle.fill",]
+    
     init() {}
 }

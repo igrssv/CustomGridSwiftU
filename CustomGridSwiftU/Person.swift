@@ -18,12 +18,16 @@ class Person: ObservableObject {
     let userName: String
     let photo: String
     @Published var like: Bool
+    let avatar: String
+    @Published var viewed: Bool
     
-    init(id: Int, userName: String, photo: String, like: Bool) {
+    init(id: Int, userName: String, photo: String, like: Bool, avatar: String, viewed: Bool) {
         self.id = id
         self.userName = userName
         self.photo = photo
         self.like = like
+        self.avatar = avatar
+        self.viewed = viewed
     }
     
     static func getPersons() -> [Person] {
@@ -38,11 +42,15 @@ class Person: ObservableObject {
     static func getPerson(id: Int) -> Person {
         let userName = DataManager.shared.userName[id]
         let photo = DataManager.shared.photo[id]
+        let avatar = DataManager.shared.avatar[id]
         let peroson = Person(
             id: id,
             userName: userName,
             photo: photo,
-            like: false)
+            like: false,
+            avatar: avatar,
+            viewed: false
+        )
         
         return peroson
     }
