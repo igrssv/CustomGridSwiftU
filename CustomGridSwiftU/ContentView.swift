@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var persons = Persons()
+    private let gridItem = [GridItem(.adaptive(minimum: UIScreen.main.bounds.width))]
+    private let size = UIScreen.main.bounds.width * 0.9
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView {
+            VStack {
+                LazyVGrid(columns: gridItem) {
+                    ForEach(persons.persons, id: \.id) { person in
+                        PersonItem(person: person, size: size)
+                    }
+                }
+            }
+        }
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -19,3 +31,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
